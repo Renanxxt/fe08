@@ -1,0 +1,200 @@
+
+/* CONFIGURAÇÃO GERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* CABEÇALHO COM FLEXBOX */
+
+.cabecalho {
+    background-color: #102a43;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 5%;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #38bdf8;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.introducao {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.introducao h2 {
+    color: #102a43;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* GRID DOS CARTÕES */
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* CARTÕES COM FLEXBOX */
+
+.cartao {
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    min-height: 230px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.produto-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.produto-info h3 {
+    font-size: 18px;
+    color: #102a43;
+}
+
+.produto-info span {
+    color: #0284c7;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.cartao p {
+    line-height: 1.5;
+    color: #64748b;
+}
+
+/* BOTÕES */
+
+.cartao button {
+    margin-top: auto;
+
+    background-color: #0284c7;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px;
+    min-height: 44px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.cartao button:hover {
+    background-color: #0369a1;
+}
+
+/* RODAPÉ COM FLEXBOX */
+
+footer {
+    background-color: #102a43;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    text-align: center;
+}
+
+/* TABLET: DUAS COLUNAS */
+
+@media (max-width: 899px) {
+    .grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CELULAR: UMA COLUNA E MENU EMPILHADO */
+
+@media (max-width: 599px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .menu a {
+        padding: 8px;
+    }
+
+    .grade {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .introducao h2 {
+        font-size: 25px;
+    }
+
+    .cartao button {
+        min-height: 44px;
+    }
+}

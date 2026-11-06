@@ -1,0 +1,139 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+
+.linha {
+    display: flex;
+    gap: 10px;
+}
+
+.linha div {
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.item-a {
+    background-color: #e74c3c;
+}
+
+.item-b {
+    background-color: #3498db;
+}
+
+.item-c {
+    background-color: #27ae60;
+}
+
+
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    background-color: #222;
+    color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.cartao {
+    flex: 1 1 220px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+
+
+.cartao-botao {
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.cartao-botao button {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.grupo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+
+.grupo button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.confirmar {
+    background-color: green;
+}
+
+.cancelar {
+    background-color: orange;
+}
+
+.excluir {
+    background-color: red;
+}
